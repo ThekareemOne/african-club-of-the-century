@@ -9,5 +9,74 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
+
+/*
+Fonts:
+font-family: "Lato", sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Holtwood One SC', serif;
+font-family: 'Bungee Inline', cursive;
+
+*/
+@font-face {
+  font-family: "AfricanCulture";
+  src: local("AfricanCulture"), url(./fonts/african-culture-font/AfricanCulture-J17a.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Afrika";
+  src: local("Afrika"), url(./fonts/afrika-safari-rebuild-st-font/AfrikaSafariRebuildSt-2lzw.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url(./fonts/afrika-t-ubuntu-font/AfrikaTUbuntu-nAOV.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Wildlife";
+  src: local("Wildlife"), url(./fonts/afrika-wildlife-b-mammals2-font/AfrikaWildlifeBMammals2-9MJj.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Egyptian";
+  src: local("Egyptian"), url(./fonts/egyptian-nights-font/EgyptianNights-yAOV.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Tajamuka";
+  src: local("Tajamuka"), url(./fonts/tajamuka-script-font/TajamukaScript-ByW5.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Tribeca";
+  src: local("Tribeca"), url(./fonts/tribeca-font/TribecaRegular-d9P6.ttf) format("truetype"); }
+
+.header__text {
+  position: relative;
+  width: 60%;
+  height: 100vh; }
+
+.header__heading {
+  background-image: linear-gradient(to right, #fdfc47, #24fe41);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 6rem;
+  font-family: "Tribeca";
+  line-height: 8rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding-left: 6rem; }
+
+.header__span {
+  font-family: "Ubuntu"; }
+
+.section-header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.5), rgba(65, 67, 69, 0.5)), url("./images/img-2.jpg");
+  background-size: cover;
+  position: relative; }

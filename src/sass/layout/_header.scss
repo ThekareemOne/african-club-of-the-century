@@ -1,0 +1,32 @@
+.header {
+  &__text {
+    position: relative;
+    width: 60%;
+    height: 100vh;
+  }
+
+  &__heading {
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 6rem;
+    font-family: "Tribeca";
+    line-height: 8rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 6rem;
+  }
+
+  &__span {
+    font-family: "Ubuntu";
+  }
+
+  &__logo {
+  }
+}

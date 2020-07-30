@@ -1,0 +1,54 @@
+/*
+Fonts:
+font-family: "Lato", sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Holtwood One SC', serif;
+font-family: 'Bungee Inline', cursive;
+
+*/
+
+@font-face {
+  font-family: "AfricanCulture";
+  src: local("AfricanCulture"),
+    url(./fonts/african-culture-font/AfricanCulture-J17a.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Afrika";
+  src: local("Afrika"),
+    url(./fonts/afrika-safari-rebuild-st-font/AfrikaSafariRebuildSt-2lzw.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"),
+    url(./fonts/afrika-t-ubuntu-font/AfrikaTUbuntu-nAOV.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Wildlife";
+  src: local("Wildlife"),
+    url(./fonts/afrika-wildlife-b-mammals2-font/AfrikaWildlifeBMammals2-9MJj.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Egyptian";
+  src: local("Egyptian"),
+    url(./fonts/egyptian-nights-font/EgyptianNights-yAOV.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Tajamuka";
+  src: local("Tajamuka"),
+    url(./fonts/tajamuka-script-font/TajamukaScript-ByW5.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Tribeca";
+  src: local("Tribeca"),
+    url(./fonts/tribeca-font/TribecaRegular-d9P6.ttf) format("truetype");
+}
