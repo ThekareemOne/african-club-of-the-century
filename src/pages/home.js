@@ -6,8 +6,12 @@ export default function Home() {
       <div className="header">
         <div className="header__text">
           <h1 className="header__heading">
-            7 Reasons why Zamalek is the{" "}
-            <span className="header__span">African club of the century</span>
+            <span className="header__span--main">
+              7 Reasons why Zamalek is the{" "}
+            </span>
+            <span className="header__span--sub">
+              African club of the century
+            </span>
           </h1>
         </div>
         <div className="header__logo">
@@ -15,7 +19,7 @@ export default function Home() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="60rem"
-              height="30rem"
+              height="40rem"
               viewBox="0 0 1000 1001"
             >
               <defs>

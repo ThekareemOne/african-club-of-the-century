@@ -73,7 +73,26 @@ font-family: 'Bungee Inline', cursive;
   padding-left: 6rem; }
 
 .header__span {
-  font-family: "Ubuntu"; }
+  background-image: linear-gradient(to right, #fdfc47, #24fe41);
+  -webkit-background-clip: text;
+  background-clip: text;
+  backface-visibility: hidden;
+  display: inline-block; }
+  .header__span--main {
+    background-image: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    backface-visibility: hidden;
+    display: inline-block;
+    animation: moveFromRight 2s ease-out; }
+  .header__span--sub {
+    background-image: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    backface-visibility: hidden;
+    display: inline-block;
+    font-family: "Ubuntu";
+    animation: moveFromLeft 2s ease-out; }
 
 .header__logo {
   display: inline-block;
@@ -91,6 +110,26 @@ font-family: 'Bungee Inline', cursive;
 .header__path {
   stroke-dasharray: 2000;
   animation: nomeh 10s linear alternate infinite; }
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
 @keyframes nomeh {
   from {
