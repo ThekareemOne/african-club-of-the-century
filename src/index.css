@@ -52,7 +52,8 @@ font-family: 'Bungee Inline', cursive;
 .header__text {
   position: relative;
   width: 60%;
-  height: 100vh; }
+  height: 100vh;
+  float: left; }
 
 .header__heading {
   background-image: linear-gradient(to right, #fdfc47, #24fe41);
@@ -73,6 +74,29 @@ font-family: 'Bungee Inline', cursive;
 
 .header__span {
   font-family: "Ubuntu"; }
+
+.header__logo {
+  display: inline-block;
+  height: 100vh;
+  width: 40%;
+  float: left;
+  position: relative; }
+
+.header__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header__path {
+  stroke-dasharray: 2000;
+  animation: nomeh 10s linear alternate infinite; }
+
+@keyframes nomeh {
+  from {
+    stroke-dashoffset: 2000; }
+  to {
+    stroke-dashoffset: 0; } }
 
 .section-header {
   width: 100%;

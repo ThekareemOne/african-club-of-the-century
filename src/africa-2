@@ -1,73 +1,13 @@
-import React from "react";
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-export default function Home() {
-  return (
-    <div className="section-header">
-      <div className="header">
-        <div className="header__text">
-          <h1 className="header__heading">
-            7 Reasons why Zamalek is the{" "}
-            <span className="header__span">African club of the century</span>
-          </h1>
-        </div>
-        <div className="header__logo">
-          <div className="header__svg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="60rem"
-              height="30rem"
-              viewBox="0 0 1000 1001"
-            >
-              <defs>
-                <linearGradient id="solids" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop
-                    offset="0%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="35%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="35%"
-                    style={{ stopColor: "red", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="46%"
-                    style={{ stopColor: "red", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="46%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="53%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="53%"
-                    style={{ stopColor: "red", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="64%"
-                    style={{ stopColor: "red", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="64%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                  <stop
-                    offset="100%"
-                    style={{ stopColor: "white", stopOpacity: "1" }}
-                  />
-                </linearGradient>
-              </defs>
-              <path
-                id="Imported Path"
-                fill="url(#solids)"
-                stroke="black"
-                strokeWidth="1"
-                d="M 832.60,372.80
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="11.1111in" height="11.1222in"
+     viewBox="0 0 1000 1001">
+  <path id="Imported Path"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 832.60,372.80
            C 832.60,372.80 826.90,367.00 826.90,367.00
              826.90,367.00 824.40,361.30 824.40,361.30
              824.40,361.30 820.30,358.70 820.30,358.70
@@ -2394,12 +2334,5 @@ export default function Home() {
              450.20,578.70 446.50,581.00 446.50,581.00
              446.50,581.00 441.50,587.00 441.50,587.00
              441.50,587.00 444.80,597.40 444.80,597.40
-             444.80,597.40 447.90,595.90 447.90,595.90 Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+             444.80,597.40 447.90,595.90 447.90,595.90 Z" />
+</svg>
