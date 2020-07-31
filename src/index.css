@@ -49,6 +49,43 @@ font-family: 'Bungee Inline', cursive;
   font-family: "Tribeca";
   src: local("Tribeca"), url(./fonts/tribeca-font/TribecaRegular-d9P6.ttf) format("truetype"); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 15rem; }
+  .card__side {
+    height: 40rem;
+    width: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s ease; }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom right, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to bottom right, #2998ff, #5643fa); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 .header__text {
   position: relative;
   width: 60%;
@@ -132,6 +169,8 @@ font-family: 'Bungee Inline', cursive;
   backface-visibility: hidden; }
   .arrow-down:hover {
     transform: scale(1.2) translateY(-2px); }
+  .arrow-down:active {
+    transform: scale(1.2) translateY(1px); }
 
 @keyframes moveFromLeft {
   0% {
@@ -177,9 +216,56 @@ font-family: 'Bungee Inline', cursive;
     opacity: 1;
     transform: translateY(0); } }
 
+.container {
+  display: flex;
+  padding: 6rem;
+  text-align: center; }
+
+.column {
+  flex: 1;
+  box-sizing: border-box; }
+
+.column-one {
+  order: 1;
+  margin-right: 6rem; }
+
+.column-two {
+  order: 2;
+  margin-right: 6rem; }
+
+.column-three {
+  order: 3; }
+
+.column-four {
+  order: 4; }
+
+.column-five {
+  order: 5; }
+
 .section-header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(35, 37, 38, 0.5), rgba(65, 67, 69, 0.5)), url("./images/img-2.jpg");
   background-size: cover;
   position: relative; }
+
+.section-ns {
+  height: 100vh;
+  width: 100%;
+  background-color: #232526; }
+
+.ns__heading {
+  padding: 6rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #fdfc47, #24fe41);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 8rem;
+  font-family: "Alfa Slab One", cursive;
+  line-height: 8rem;
+  text-transform: uppercase; }
+
+.ns__text {
+  text-align: center; }

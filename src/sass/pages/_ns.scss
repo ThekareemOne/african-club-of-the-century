@@ -1,0 +1,24 @@
+.section-ns {
+  height: 100vh;
+  width: 100%;
+  background-color: #232526;
+}
+
+.ns {
+  &__heading {
+    padding: 6rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 8rem;
+    font-family: "Alfa Slab One", cursive;
+    line-height: 8rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    text-align: center;
+  }
+}

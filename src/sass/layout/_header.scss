@@ -95,6 +95,9 @@
   &:hover {
     transform: scale(1.2) translateY(-2px);
   }
+  &:active {
+    transform: scale(1.2) translateY(1px);
+  }
 }
 
 @keyframes moveFromLeft {

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  padding: 6rem;
+  text-align: center;
+}
+
+.column {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.column-one {
+  order: 1;
+  margin-right: 6rem;
+}
+.column-two {
+  order: 2;
+  margin-right: 6rem;
+}
+.column-three {
+  order: 3;
+}
+.column-four {
+  order: 4;
+}
+.column-five {
+  order: 5;
+}

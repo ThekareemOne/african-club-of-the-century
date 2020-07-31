@@ -2403,7 +2403,7 @@ export default function Home() {
           </div>
         </div>
         <div className="header__down">
-          <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2">
+          <a class="ct-btn-scroll ct-js-btn-scroll" href="#section-ns">
             <img
               className="arrow-down"
               alt="Arrow Down Icon"
