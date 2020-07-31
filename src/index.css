@@ -107,9 +107,31 @@ font-family: 'Bungee Inline', cursive;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.header__path {
-  stroke-dasharray: 2000;
-  animation: nomeh 10s linear alternate infinite; }
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s linear forwards 2s; }
+
+.ct-btn-scroll {
+  opacity: 0;
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  animation: arrow 1s ease-in forwards 7s;
+  backface-visibility: hidden; }
+
+.arrow-down {
+  transition: ease-in 0.2s;
+  backface-visibility: hidden; }
+  .arrow-down:hover {
+    transform: scale(1.2) translateY(-2px); }
 
 @keyframes moveFromLeft {
   0% {
@@ -131,11 +153,29 @@ font-family: 'Bungee Inline', cursive;
     opacity: 1;
     transform: translateX(0rem); } }
 
-@keyframes nomeh {
+@keyframes draw {
+  0% {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 8; }
+  80% {
+    stroke-dashoffset: 0;
+    fill: white;
+    stroke: black;
+    stroke-width: 3; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: url(#solids);
+    stroke: black;
+    stroke-width: 3; } }
+
+@keyframes arrow {
   from {
-    stroke-dashoffset: 2000; }
+    opacity: 0;
+    transform: translateY(2rem); }
   to {
-    stroke-dashoffset: 0; } }
+    opacity: 1;
+    transform: translateY(0); } }
 
 .section-header {
   width: 100%;

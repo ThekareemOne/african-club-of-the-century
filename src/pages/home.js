@@ -68,9 +68,8 @@ export default function Home() {
               </defs>
               <path
                 id="Imported Path"
-                fill="url(#solids)"
-                stroke="black"
-                strokeWidth="1"
+                fill="transparent"
+                className="path"
                 d="M 832.60,372.80
            C 832.60,372.80 826.90,367.00 826.90,367.00
              826.90,367.00 824.40,361.30 824.40,361.30
@@ -2402,6 +2401,15 @@ export default function Home() {
               />
             </svg>
           </div>
+        </div>
+        <div className="header__down">
+          <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2">
+            <img
+              className="arrow-down"
+              alt="Arrow Down Icon"
+              src="./arrow-down-1.png"
+            />
+          </a>
         </div>
       </div>
     </div>
