@@ -7,10 +7,7 @@
   &__side {
     height: 40rem;
     width: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -19,27 +16,15 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.15);
     overflow: hidden;
-    backface-visibility: hidden;
 
     transition: all 0.8s ease;
 
     &--front {
-      background-color: white;
+      background-image: linear-gradient(to bottom right, #ece9e6, #ffffff);
     }
     &--back {
       transform: rotateY(180deg);
-
-      &-1 {
-        background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
-      }
-
-      &-2 {
-        background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
-      }
-
-      &-3 {
-        background-image: linear-gradient(to bottom right, #2998ff, #5643fa);
-      }
+      background-image: linear-gradient(to bottom right, #f27358, #ec2028);
     }
   }
 
@@ -48,5 +33,47 @@
   }
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkitclip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+
+    &--1 {
+      background-image: url("./images/zamalek33.jpg");
+    }
+
+    &--2 {
+      background-image: url("./images/ahly3.jpg");
+    }
+    &--3 {
+      background-image: url("./images/d2.jpg");
+    }
+    &--4 {
+      background-image: url("./images/ahly4.jpg");
+    }
+    &--5 {
+      background-image: url("./images/zamalek1.jpg");
+    }
+    &--6 {
+      background-image: url("./images/ahly5.jpg");
+    }
+  }
+
+  &__heading {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Alfa Slab One", cursive;
+    color: #333333;
   }
 }
