@@ -1,0 +1,74 @@
+.section-knockout {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/ali5.jpg");
+  background-size: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  animation: backgroundGradient 2s ease-out forwards;
+}
+
+.knockout {
+  &__heading {
+    padding: 6rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    font-family: "Alfa Slab One", cursive;
+    line-height: 2rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__body {
+    opacity: 0;
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", cursive;
+    animation: moveFromBottom 0.5s ease-out forwards 1.5s;
+    backface-visibility: hidden;
+  }
+  &__main {
+    text-align: center;
+    &--top {
+      display: inline-block;
+    }
+    &--bottom {
+      display: inline-block;
+    }
+  }
+}
+
+@keyframes moveFromBottom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes backgroundGradient {
+  from {
+    background-image: url("./images/ali5.jpg");
+  }
+
+  to {
+    background-image: linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+      url("./images/ali5.jpg");
+  }
+}

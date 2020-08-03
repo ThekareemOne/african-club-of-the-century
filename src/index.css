@@ -292,3 +292,69 @@ font-family: 'Bungee Inline', cursive;
 
 .ns__text {
   text-align: center; }
+
+.zamalek {
+  color: white; }
+
+.ahly {
+  color: red; }
+
+.section-knockout {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/ali5.jpg");
+  background-size: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  animation: backgroundGradient 2s ease-out forwards; }
+
+.knockout__heading {
+  padding: 6rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #fdfc47, #24fe41);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  font-family: "Alfa Slab One", cursive;
+  line-height: 2rem;
+  text-transform: uppercase;
+  position: relative; }
+
+.knockout__text {
+  text-align: center; }
+
+.knockout__body {
+  opacity: 0;
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  animation: moveFromBottom 0.5s ease-out forwards 1.5s;
+  backface-visibility: hidden; }
+
+.knockout__main {
+  text-align: center; }
+  .knockout__main--top {
+    display: inline-block; }
+  .knockout__main--bottom {
+    display: inline-block; }
+
+@keyframes moveFromBottom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%); }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+@keyframes backgroundGradient {
+  from {
+    background-image: url("./images/ali5.jpg"); }
+  to {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/ali5.jpg"); } }
