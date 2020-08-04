@@ -5,6 +5,9 @@
   background-size: cover;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+
+.knockout-animated {
   animation: backgroundGradient 2s ease-out forwards;
 }
 
@@ -36,9 +39,13 @@
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-family: "Alfa Slab One", cursive;
-    animation: moveFromBottom 0.5s ease-out forwards 1.5s;
     backface-visibility: hidden;
   }
+
+  &__body-animated {
+    animation: moveFromBottom 0.5s ease-out forwards 1.5s;
+  }
+
   &__main {
     text-align: center;
     &--top {

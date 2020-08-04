@@ -74,6 +74,7 @@
 
 .ct-btn-scroll {
   opacity: 0;
+  visibility: hidden;
   width: 49px;
   height: 49px;
   position: absolute;
@@ -161,5 +162,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
+    visibility: visible;
   }
 }
