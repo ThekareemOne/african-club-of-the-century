@@ -3,7 +3,7 @@ import { appendScript } from "../appendScript";
 
 export default class Knockout extends React.Component {
   componentDidMount() {
-    appendScript();
+    appendScript("./scroll-down.js");
   }
 
   render() {

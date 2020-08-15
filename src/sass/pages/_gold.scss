@@ -1,0 +1,87 @@
+.section-gold {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#fdfc47, 0.2),
+      rgba(#24fe41, 0.2)
+    ),
+    url("./images/gold6.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.gold {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#232526, 0.5),
+      rgba(#414345, 0.5)
+    ),
+    url("./images/gold6.jpg");
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+
+  &__heading {
+    width: 100%;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__text {
+    text-align: center;
+  }
+  &__body {
+    opacity: 0;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", cursive;
+    backface-visibility: hidden;
+  }
+
+  &__body-animated {
+    animation: moveFromBottom 0.5s ease-out forwards 1.5s;
+  }
+
+  &__main {
+    text-align: center;
+    &--top {
+      display: inline-block;
+    }
+    &--bottom {
+      display: inline-block;
+    }
+  }
+}
+
+@keyframes moveFromBottom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

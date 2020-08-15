@@ -1,6 +1,6 @@
-export const appendScript = () => {
+export const appendScript = (source) => {
   const script = document.createElement("script");
-  script.src = "./scroll-down.js";
+  script.src = source;
   console.log(script);
   script.async = true;
   document.body.appendChild(script);
