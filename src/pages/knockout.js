@@ -16,7 +16,7 @@ export default class Knockout extends React.Component {
           <p className="knockout__main">
             <span className="knockout__main--top">| Combat Sports |</span>
             <span className="knockout__main--bottom">
-              point system is only used if fighters fail to knockout each other.
+              point system is only used if fighters fail to knockout each other
             </span>
           </p>
         </div>

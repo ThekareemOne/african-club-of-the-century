@@ -426,3 +426,37 @@ font-family: 'Bungee Inline', cursive;
   to {
     opacity: 1;
     transform: translate(-50%, -50%); } }
+
+.section-corruption {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #232526, #414345);
+  background-size: cover;
+  position: relative; }
+
+.corruption__heading {
+  padding: 6rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #000000, #1f1c2c);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  font-family: "Alfa Slab One", cursive;
+  line-height: 3rem;
+  text-transform: uppercase;
+  position: relative; }
+
+.corruption__text {
+  text-align: center; }
+
+.corruption__container {
+  width: 80%;
+  text-align: center;
+  margin: auto; }
+
+.corruption__quote {
+  font-size: 3.4rem;
+  font-family: "Alfa Slab One", cursive;
+  color: black; }

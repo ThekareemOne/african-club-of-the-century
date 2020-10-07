@@ -7,7 +7,7 @@ export default function Home() {
         <div className="header__text">
           <h1 className="header__heading">
             <span className="header__span--main">
-              7 Reasons why Zamalek is the{" "}
+              3 Reasons why Zamalek is the{" "}
             </span>
             <span className="header__span--sub">
               African club of the century
