@@ -5,7 +5,8 @@ export default function NineSeven() {
     <div className="section-ns" id="section-ns">
       <div className="ns__heading">
         <h2 className="ns__text">
-          <span className="zamalek">9</span> > <span className="ahly">7</span>
+          <span className="zamalek">9</span> &gt;{" "}
+          <span className="ahly">7</span>
         </h2>
       </div>
       <div className="container">

@@ -10,7 +10,7 @@ export default class Gold extends React.Component {
       <div className="section-gold" id="section-gold">
         <div className="gold">
           <div className="gold__heading">
-            <h2 className="gold__text">Gold > Silver</h2>
+            <h2 className="gold__text">Gold &gt; Silver</h2>
           </div>
           <div className="gold__body" id="gold__body">
             <p className="gold__main">

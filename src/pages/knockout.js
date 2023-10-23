@@ -10,7 +10,7 @@ export default class Knockout extends React.Component {
     return (
       <div className="section-knockout" id="section-knockout">
         <div className="knockout__heading">
-          <h2 className="knockout__text">Knockout > Points</h2>
+          <h2 className="knockout__text">Knockout &gt; Points</h2>
         </div>
         <div className="knockout__body" id="knockout__body">
           <p className="knockout__main">
